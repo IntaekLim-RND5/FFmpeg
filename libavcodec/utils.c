@@ -594,6 +594,8 @@ int av_get_bits_per_sample(enum AVCodecID codec_id)
     case AV_CODEC_ID_ADPCM_IMA_QT:
     case AV_CODEC_ID_ADPCM_SWF:
     case AV_CODEC_ID_ADPCM_MS:
+    case AV_CODEC_ID_ADPCM_G726:
+    case AV_CODEC_ID_ADPCM_G726LE:
         return 4;
     default:
         return av_get_exact_bits_per_sample(codec_id);
